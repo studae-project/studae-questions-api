@@ -1,7 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gofiber/fiber/v2"
+	"os"
 	"studae-questions/controller"
 	"studae-questions/discord"
 	"studae-questions/services"
@@ -24,5 +26,15 @@ func main() {
 		return nil
 	})
 
-	app.Listen(":8090")
+	app.Listen(getAppPort())
+}
+
+func getAppPort() string {
+	applicationPort, found := os.LookupEnv("PORT")
+
+	if !found {
+		return ":8090"
+	}
+
+	return fmt.Sprintf(":%s", applicationPort)
 }
