@@ -19,7 +19,7 @@ func ParseCreateQuestionRequest(form *multipart.Form) CreateQuestionRequest {
 
 	return CreateQuestionRequest{
 		Text:    form.Value["text"][0],
-		Channel: form.Value["channel"][0],
+		Channel: "testing",
 		Image:   MultipartFile{header},
 	}
 }

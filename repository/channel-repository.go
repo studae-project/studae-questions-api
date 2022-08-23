@@ -6,6 +6,7 @@ func GetAllowedChannelsToSendQuestions() map[string]string {
 		"outros":                  "769362287261122610",
 		"frameworks":              "766039785646325782",
 		"html-css-javascript-php": "766039622400344085",
+		"testing":                 "1011731564750721084",
 	}
 }
 
