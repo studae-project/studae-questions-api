@@ -2,10 +2,10 @@ package repository
 
 func GetAllowedChannelsToSendQuestions() map[string]string {
 	return map[string]string{
-		"java-kotlin":             "1008357078043201627",
-		"outros":                  "asdsa",
-		"frameworks":              "asdsa",
-		"html-css-javascript-php": "sadsads",
+		"java-kotlin":             "655390389498281984",
+		"outros":                  "769362287261122610",
+		"frameworks":              "766039785646325782",
+		"html-css-javascript-php": "766039622400344085",
 	}
 }
 
