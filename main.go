@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 	"os"
 	"studae-questions/controller"
 	"studae-questions/discord"
@@ -11,6 +12,8 @@ import (
 
 func main() {
 	app := fiber.New()
+	app.Use(cors.New())
+
 	discord.StartDiscordApplication()
 
 	var botServiceImpl services.BotService = services.BotServiceImpl{
